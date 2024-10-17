@@ -1,0 +1,3 @@
+Togglable menu icon used for mobile, as nav bar cant always be available.
+
+Scale up approach - make mobile site first then scale up for desktop.
