@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+/* Menu icon not clicked */
+.menu{
+    display: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+/* Menu icon clicked */
+.menu.active{
+    display: block;
+}
+
+.menu_items{
+    padding: 0.5rem 0;
+}
+
+.logo{
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+.toggle{
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0.6rem;
+    margin-right: 1rem;
+}
