@@ -1,4 +1,4 @@
-.header{
+.header_container{
     display: flex;
     flex-direction: column;
     position: relative; 
@@ -8,6 +8,11 @@
     display: none;
     font-size: 1.5rem;
     text-align: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
 }
 /* Menu icon clicked */
 .menu.active{
@@ -33,7 +38,7 @@
 }
 
 @media screen and (min-width:1024px) {
-    .header {
+    .header_container {
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -41,6 +46,7 @@
 
     .menu{
         display: flex;
+        flex-direction: row;
         font-size: 1.2rem;
         width: 50%;
     }

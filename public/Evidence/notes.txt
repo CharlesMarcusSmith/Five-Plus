@@ -1,3 +1,12 @@
 Togglable menu icon used for mobile, as nav bar cant always be available.
 
 Scale up approach - make mobile site first then scale up for desktop.
+
+
+To fix the issue with drop down moing the divs below it, I moved the menu below the header, and added the following css to the clicked (deployed) css:
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    position: absolute;     <--- this 
+    z-index: 99999;         <--- and this is what stopped it from moving the div below, the rest was added to reformat it after position absolute
