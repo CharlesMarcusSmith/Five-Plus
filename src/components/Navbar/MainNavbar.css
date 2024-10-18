@@ -31,3 +31,29 @@
     margin-top: 0.6rem;
     margin-right: 1rem;
 }
+
+@media screen and (min-width:1024px) {
+    .header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    .menu_items{
+        padding: 0 2rem;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+    .toggle{
+        display: none;
+    }
+}
