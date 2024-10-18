@@ -9,8 +9,8 @@ export default function MainNavbar() {
   return (
     <>
       {/* this empty div is called fragmentation, and it's a way of avoiding unessesary divs in our project. */}
-      <header>
-        <div className='header_bar'>
+      <header className='header_container'>
+        <div className='nav_bar'>
             <div className="logo"><h1> CS </h1></div>
             <div className="toggle" onClick={handleClick}>
                 {/* Ternary operator for conditional for icon toggle*/}
