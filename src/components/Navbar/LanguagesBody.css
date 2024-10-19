@@ -1,3 +1,4 @@
+/* Mobiles: */
 .container{
     display: flex;
     flex-direction: column;
@@ -6,12 +7,13 @@
 
 .lang_list{
     text-align: center;
-    border-top: 0.5px solid grey;
-    border-bottom: 0.5px solid grey;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
 }
 
-h2{
+.lang_heading{
     padding: 0.5rem;
+
     /* TODO: Make the below on click: */
     /* border-bottom: 0.2rem solid grey; */
 }
@@ -19,4 +21,36 @@ h2{
 .lang_items{
     display: none;
 }
+
+.lang_body{
+    padding: 4%;
+    font-size: 1rem;
+}
+
+.lang_stars{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.stars_wording{
+    font-weight: 500;
+    padding-bottom: 1.3rem;
+}
+
+.text_heading{
+    font-weight: 700;
+    color:darkslategrey
+}
+
+.covered_bullet{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 2%;
+}
+
+li span {
+    position: relative;
+    left: -5px;
+  }
 

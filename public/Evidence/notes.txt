@@ -14,3 +14,6 @@ To fix the issue with drop down moing the divs below it, I moved the menu below 
 ^ This however broke the desktop navbar, which required a div to contain the nav bar and menu, and change the 
 
 TODO: Fix the mobile dropdown borders top etc and round bottom of both menus
+
+
+- to add padding bottom to stars, as they were contained in <span> m i needed to used display:block
