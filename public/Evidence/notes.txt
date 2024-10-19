@@ -17,3 +17,5 @@ TODO: Fix the mobile dropdown borders top etc and round bottom of both menus
 
 
 - to add padding bottom to stars, as they were contained in <span> m i needed to used display:block
+
+TODO:: sort out margin instead of logo to use the navbar container amnd add box-shadow below

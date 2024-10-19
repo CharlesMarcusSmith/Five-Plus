@@ -1,23 +1,33 @@
 import "./LanguagesBody.css"
 import { TbStar } from "react-icons/tb";
 import { TbStarFilled } from "react-icons/tb";
+import { SiCss3 } from "react-icons/si";
+import { SiHtml5 } from "react-icons/si";
+import { RiJavaFill } from "react-icons/ri";
+import { SiJavascript } from "react-icons/si";
+import { SiKotlin } from "react-icons/si";
+import { SiPython } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
 export default function LanguagesBody() {
     return (
         <>
+            <h3 className="lang_heading">Languages</h3>
             <div className="container">
                 <ul className="lang_list">
-                    <h2 className="lang_heading">Languages</h2>
-                    <li className="lang_items">Java</li>
-                    <li className="lang_items">Kotlin</li>
-                    <li className="lang_items">Python</li>
-                    <li className="lang_items">SQL</li>
+                    <li className="si_items"><span className="si_logo"><SiCss3 /></span>CSS</li>
+                    <li className="si_items"><span className="si_logo"><SiHtml5 /></span>HTML</li>
+                    <li className="ri_items"><span className="ri_logo"><RiJavaFill /></span>Java</li>
+                    <li className="si_items"><span className="si_logo"><SiJavascript /></span>JavaScript</li>
+                    <li className="si_items"><span className="si_logo"><SiKotlin /></span>Kotlin</li>
+                    <li className="si_items"><span className="si_logo"><SiPython /></span>Python</li>
+                    <li className="si_items"><span className="si_logo"><SiPostgresql /></span>PostgreSQL</li>
                 </ul>
-                <div className="lang_body">
+            <div className="lang_body">
                     <span className="lang_stars">
                         <TbStarFilled/><TbStarFilled/><TbStar/><TbStar/><TbStar/>
                     </span>
                     <div className="lang_text">
-                        <h2>SQL</h2>
+                        <h2>PostgreSQL</h2>
                         <h4 className="stars_wording">Advanced Beginner</h4>
                         <p className="text_heading">Covered</p>
                         <p>Have completed a number of projects involving SQL, covering:</p>

@@ -1,28 +1,58 @@
 /* Mobiles: */
 .container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-}
-
-.lang_list{
-    text-align: center;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
 }
 
 .lang_heading{
     padding: 0.5rem;
-
+    font-weight: 600;
+    padding-left: 5%;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
     /* TODO: Make the below on click: */
     /* border-bottom: 0.2rem solid grey; */
 }
 
-.lang_items{
-    display: none;
+.lang_list{
+    text-align: left;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    z-index: 99999;
+}
+
+/* Configuring react icon sizes for language icons */
+.ri_logo{
+    font-size: 1.2rem;
+    padding-right: 0.4rem;
+}
+.si_logo{
+    font-size: 1rem;
+    padding-right: 0.5rem;
+
+}
+
+.ri_items{
+    /* display: none; */
+    padding-left: 1.2rem;
+    padding-right: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
+}
+.si_items{
+    /* display: none; */
+    padding-left: 1.2rem;
+    padding-right: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.3rem;
 }
 
 .lang_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 4%;
     font-size: 1rem;
 }
