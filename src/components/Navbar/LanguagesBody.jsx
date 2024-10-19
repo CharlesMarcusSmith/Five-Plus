@@ -29,7 +29,7 @@ export default function LanguagesBody() {
                     <li className="si_items"><span className="si_logo"><SiPython /></span>Python</li>
                     <li className="si_items"><span className="si_logo"><SiPostgresql /></span>PostgreSQL</li>
                 </ul>
-            <div className="lang_body">
+                <div className="lang_body">
                     <span className="lang_stars">
                         <TbStarFilled/><TbStarFilled/><TbStar/><TbStar/><TbStar/>
                     </span>
