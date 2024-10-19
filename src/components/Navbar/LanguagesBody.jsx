@@ -1,4 +1,7 @@
 import "./LanguagesBody.css"
+import React, {useState} from 'react';
+import { FiAlignJustify } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 import { TbStar } from "react-icons/tb";
 import { TbStarFilled } from "react-icons/tb";
 import { SiCss3 } from "react-icons/si";
@@ -9,11 +12,15 @@ import { SiKotlin } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 export default function LanguagesBody() {
+    const[click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
     return (
         <>
-            <h3 className="lang_heading">Languages</h3>
+            <div className="lang_heading" onClick={handleClick}>
+                <span ><h3 >Languages</h3><icon>{click ? <FiX/> : <FiAlignJustify/>}</icon></span>
+            </div>
             <div className="container">
-                <ul className="lang_list">
+                <ul className={click ? "lang_list_active" : "lang_list"}>
                     <li className="si_items"><span className="si_logo"><SiCss3 /></span>CSS</li>
                     <li className="si_items"><span className="si_logo"><SiHtml5 /></span>HTML</li>
                     <li className="ri_items"><span className="ri_logo"><RiJavaFill /></span>Java</li>
