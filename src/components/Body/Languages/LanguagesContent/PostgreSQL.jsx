@@ -1,7 +1,8 @@
 import "./LanguagesContent.css"
+import { LangStarCount } from "../Languages";
 import { TbStar } from "react-icons/tb";
 import { TbStarFilled } from "react-icons/tb";
-
+const stars = <LangStarCount target={"PostgreSQL"}/>
 export default function LanguagesContent() {
     return (
         <>

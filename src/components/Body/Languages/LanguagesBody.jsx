@@ -1,4 +1,4 @@
-import LanguagesContent from "./LanguagesContent/LanguagesContent"
+import PostgreSQL from "./LanguagesContent/PostgreSQL"
 import LanguageMenu from "./LanguagesMenu/LanguagesMenu"
 import "./LanguagesBody.css"
 
@@ -7,7 +7,7 @@ export default function LanguagesBody() {
         <>
             <div className="grid">
                 <LanguageMenu/>
-                <LanguagesContent/>
+                <PostgreSQL/>
             </div>
         </>
     )
