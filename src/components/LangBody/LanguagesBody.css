@@ -1,4 +1,8 @@
 /* Mobiles: */
+/* *{
+    outline: 1px solid red;
+} */
+
 .container{
     display: flex;
     flex-direction: row;
@@ -6,71 +10,9 @@
     background-color: white;
 }
 
-.lang_heading{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.1rem;
-    font-weight: 600;
-    padding-left: 5%;
-    border-top: 1px solid lightgrey;
-    border-bottom: 1px solid lightgrey;
-    flex-direction: row;
-    /* TODO: Make the below on click: */
-    /* border-bottom: 0.2rem solid grey; */
-}
-
 icon{
     font-size: 1.5rem;
     padding-right: 1.2rem;
-}
-
-.lang_heading span{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.lang_list{
-    display: none;
-    text-align: left;
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    z-index: 99999;
-}
-
-.lang_list_active{
-    text-align: left;
-    background-color: white;
-    width: 100%;
-    position: absolute;
-    z-index: 99999;
-}
-
-/* Configuring react icon sizes for language icons */
-.ri_logo{
-    font-size: 1.2rem;
-    padding-right: 0.4rem;
-}
-.si_logo{
-    font-size: 1rem;
-    padding-right: 0.5rem;
-
-}
-
-.ri_items{
-    padding-left: 1.2rem;
-    padding-right: 0.5rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.3rem;
-}
-.si_items{
-    /* display: none; */
-    padding-left: 1.2rem;
-    padding-right: 0.5rem;
-    padding-top: 0.4rem;
-    padding-bottom: 0.3rem;
 }
 
 .lang_body{
@@ -109,35 +51,15 @@ li span {
   }
 
 @media screen and (min-width:1024px) {
-    .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: lightgrey;
-    }
-
-    icon{
-        display: none;
-    }
-
-    .lang_list, .lang_list_active{
-        display: block;
-        text-align: left;
-        background-color: white;
-        width: 30%;
-        position: relative;
-        padding-top: 1rem;
-        padding-left: 1rem;
+    .grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
     }
 
     .lang_body{
-        width: 70%;
-        length: 100%;
         background-color: white;
         border-left: 100px;
         border-color: lightgrey;
         padding: 1rem;
     }
-
-    
 }
