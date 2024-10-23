@@ -20,4 +20,4 @@ TODO: Fix the mobile dropdown borders top etc and round bottom of both menus
 
 TODO:: sort out margin instead of logo to use the navbar container amnd add box-shadow below
 
-TODO: Make design more resposive for large tablets - e.g. surface 7 pro
+TODO: Make design more resposive for large tablets - e.g. surface 7 pro and super 

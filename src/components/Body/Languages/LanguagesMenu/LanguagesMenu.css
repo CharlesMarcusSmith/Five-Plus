@@ -1,11 +1,3 @@
-/* Mobiles: */
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: white;
-}
-
 .lang_heading{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -18,11 +10,6 @@
     flex-direction: row;
     /* TODO: Make the below on click: */
     /* border-bottom: 0.2rem solid grey; */
-}
-
-icon{
-    font-size: 1.5rem;
-    padding-right: 1.2rem;
 }
 
 .lang_heading span{
@@ -73,47 +60,14 @@ icon{
     padding-bottom: 0.3rem;
 }
 
-.lang_body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 4%;
-    font-size: 1rem;
+a{
+    color: inherit;
+    text-decoration: none;
 }
-
-.lang_stars{
-    display: block;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.stars_wording{
-    font-weight: 500;
-    padding-bottom: 1.3rem;
-}
-
-.text_heading{
-    font-weight: 700;
-    color:darkslategrey
-}
-
-.covered_bullet{
-    list-style-type: disc;
-    list-style-position: inside;
-    padding-left: 2%;
-}
-
-li span {
-    position: relative;
-    left: -5px;
-  }
 
 @media screen and (min-width:1024px) {
-    .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        background-color: lightgrey;
+    .lang_heading {
+        grid-column: 1 / span 2;
     }
 
     icon{
@@ -124,20 +78,8 @@ li span {
         display: block;
         text-align: left;
         background-color: white;
-        width: 30%;
         position: relative;
         padding-top: 1rem;
         padding-left: 1rem;
     }
-
-    .lang_body{
-        width: 70%;
-        length: 100%;
-        background-color: white;
-        border-left: 100px;
-        border-color: lightgrey;
-        padding: 1rem;
-    }
-
-    
 }
