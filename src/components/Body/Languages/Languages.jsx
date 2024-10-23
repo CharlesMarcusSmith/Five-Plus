@@ -9,7 +9,7 @@ const languages = [
     {title: 'CSS',        id: 1, href: "/css", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiCss3/>, stars: 2},
     {title: 'HTML',       id: 2, href: "/html", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiHtml5/>, stars: 2},
     {title: 'Java',       id: 3, href: "/java", itemClassName: "ri_items", imageClassName: "ri_logo", imageName: <RiJavaFill/>, stars: 3},
-    {title: 'JavaScript', id: 4, href: "/javascript", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiJavascript/>, stars: 1},
+    {title: 'JavaScript', id: 4, href: "/javascript", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiJavascript/>, stars: 2},
     {title: 'Kotlin',     id: 5, href: "/kotlin", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiKotlin/>, stars: 2},
     {title: 'Python',     id: 6, href: "/python", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiPython/>, stars: 2},
     {title: 'PostgreSQL', id: 7, href: "/postgresql", itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiPostgresql/>, stars: 2}

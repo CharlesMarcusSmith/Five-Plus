@@ -11,7 +11,7 @@ export default function LanguagesContent() {
             <div className="lang_content">
                 <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
-                    <h2>PostgreSQL</h2>
+                    <h2>Python</h2>
                     <h4 className="stars_wording">{starWording}</h4>
                     <p className="text_heading">Covered</p>
                     <p>This is a language I currently code in proffessionally. My understanding is weak, especially with the little tricks Python offers, but I'm still above a novice / beginner level.</p>

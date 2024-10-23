@@ -11,7 +11,7 @@ export default function LanguagesContent() {
             <div className="lang_content">
                 <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
-                    <h2>PostgreSQL</h2>
+                    <h2>Kotlin</h2>
                     <h4 className="stars_wording">{starWording}</h4>
                     <p className="text_heading">Covered</p>
                     <p>This has been a primary language in my team. It does not come naturally but I have enough understanding to be classed higher than a beginner.</p>

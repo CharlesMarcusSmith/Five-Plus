@@ -11,7 +11,7 @@ export default function LanguagesContent() {
             <div className="lang_content">
                 <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
-                    <h2>PostgreSQL</h2>
+                    <h2>CSS</h2>
                     <h4 className="stars_wording">{starWording}</h4>
                     <p className="text_heading">Covered</p>
                     <p>This current project displays my current CSS ability, I have however mastered Flexbox and Grid positioning.</p>
