@@ -1,4 +1,4 @@
-import './LanguageMenu.css'
+import './LanguagesMenu.css'
 import React, {useState} from 'react';
 import { FiAlignJustify } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
