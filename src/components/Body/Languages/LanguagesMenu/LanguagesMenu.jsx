@@ -1,4 +1,5 @@
 import './LanguagesMenu.css'
+import LanguageItems from './LangaugeMenuItems';
 import React, {useState} from 'react';
 import { FiAlignJustify } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
@@ -27,6 +28,7 @@ export default function LanguageMenu(langauage) {
                 <li className="si_items"><span className="si_logo"><SiPython /></span>Python</li>
                 <li className="si_items"><span className="si_logo"><SiPostgresql /></span>PostgreSQL</li>
             </ul>
+            {/* <LangaugeItems/> */}
         </>
     )
 }
