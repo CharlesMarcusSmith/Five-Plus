@@ -1,15 +1,13 @@
 import "./LanguagesContent.css"
 import { LangStarCount } from "../Languages";
-import { TbStar } from "react-icons/tb";
-import { TbStarFilled } from "react-icons/tb";
-const stars = <LangStarCount target={"PostgreSQL"}/>
+import { Stars } from "./Stars/Stars";
 export default function LanguagesContent() {
+    // Function call (rather than component call <component/>)
+    const noOfStars = LangStarCount({ target: "PostgreSQL" });
     return (
         <>
             <div className="lang_content">
-                <span className="lang_stars">
-                    <TbStarFilled/><TbStarFilled/><TbStar/><TbStar/><TbStar/>
-                </span>
+                <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
                     <h2>PostgreSQL</h2>
                     <h4 className="stars_wording">Advanced Beginner</h4>
