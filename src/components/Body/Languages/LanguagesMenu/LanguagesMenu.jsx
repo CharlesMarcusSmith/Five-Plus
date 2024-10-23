@@ -13,22 +13,18 @@ import { SiPostgresql } from "react-icons/si";
 export default function LanguageMenu(langauage) {
     const[click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-
-    
     
     return (
         <>
             <div className="lang_heading" onClick={handleClick}>
                 <span ><h3 >Languages</h3><icon>{click ? <FiX/> : <FiAlignJustify/>}</icon></span>
             </div>
-            <ul  className={click ? "lang_list_active" : "lang_list"}>
-                <LanguageItems click={click}/>
-            </ul>
+            <LanguageItems click={click}/>
         </>
     )
 }
 
-function LanguageItems(){
+function LanguageItems({click}){
     const languages = [
         {title: 'CSS',        id: 1, itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiCss3/>},
         {title: 'HTML',       id: 2, itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiHtml5/>},
@@ -44,7 +40,7 @@ function LanguageItems(){
     )
 
     return(
-        <ul>
+        <ul className={click ? "lang_list_active" : "lang_list"}>
             {languageItems}
         </ul>
     )
