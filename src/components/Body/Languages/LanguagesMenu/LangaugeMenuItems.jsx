@@ -1,3 +1,4 @@
+import './LanguagesMenu.css'
 import { SiCss3 } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { RiJavaFill } from "react-icons/ri";
@@ -6,7 +7,7 @@ import { SiKotlin } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { SiPostgresql } from "react-icons/si";
 
-export default function LanguageItems(){
+export default function LanguageItems(click){
     const languages = [
         {title: 'CSS',        id:1, itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiCss3/>},
         {title: 'HTML',       id:2, itemClassName: "si_items", imageClassName: "si_logo", imageName: <SiHtml5/>},
@@ -21,8 +22,10 @@ export default function LanguageItems(){
         <li className={language.itemClassName}><span className={language.imageClassName}>{language.imageName}</span>{language.title} </li>
     )
 
+    console.log("Click in items:" + Object.values(click))
+
     return(
-        <ul>
+        <ul className={click ? "lang_list_active" : "lang_list"}>
             {languageItems}
         </ul>
     )
