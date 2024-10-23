@@ -28,7 +28,7 @@ export default function LanguageItems({click}){
     )
 }
 
-export function LangStarCount({target}){
+export function GetLangStarCount({target}){
     const result = languages.find(language => 
         language.title === target
     )

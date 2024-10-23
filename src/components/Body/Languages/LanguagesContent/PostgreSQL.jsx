@@ -1,16 +1,18 @@
 import "./LanguagesContent.css"
-import { LangStarCount } from "../Languages";
+import { GetLangStarCount } from "../Languages";
 import { Stars } from "./Stars/Stars";
+import { GetStarWording } from "./Stars/Stars"; 
 export default function LanguagesContent() {
     // Function call (rather than component call <component/>)
-    const noOfStars = LangStarCount({ target: "PostgreSQL" });
+    const noOfStars = GetLangStarCount({ target: "PostgreSQL" });
+    const starWording = GetStarWording({noOfStars: noOfStars});
     return (
         <>
             <div className="lang_content">
                 <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
                     <h2>PostgreSQL</h2>
-                    <h4 className="stars_wording">Advanced Beginner</h4>
+                    <h4 className="stars_wording">{starWording}</h4>
                     <p className="text_heading">Covered</p>
                     <p>Have completed a number of projects involving SQL, covering:</p>
                     <ul>
