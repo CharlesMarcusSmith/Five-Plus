@@ -8,15 +8,13 @@ export default function LanguagesContent() {
     const starWording = GetStarWording({noOfStars: noOfStars});
     return (
         <>
-            <div className="lang_content">
+            <p className="lang_content">
                 <Stars noOfStars={noOfStars}/>
-                <div className="lang_text">
-                    <h2>HTML</h2>
-                    <h4 className="stars_wording">{starWording}</h4>
-                    <p className="text_heading">Covered</p>
-                    <p>This current project displays my current HTML ability. It has certainly improved but accessibility has been raised as a concern.</p>
-                </div>
-            </div>
+                <h2>HTML</h2>
+                <h4 className="stars_wording">{starWording}</h4>
+                <h3 className="text_heading">Covered</h3>
+                <p>This current project displays my current HTML ability. It has certainly improved but accessibility has been raised as a concern.</p>
+            </p>
         </>
     )
 }
