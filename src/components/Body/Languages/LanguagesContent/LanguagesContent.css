@@ -42,8 +42,6 @@ li span {
 @media screen and (min-width:1024px) {
     .lang_content{
         background-color: white;
-        border-left: 100px;
-        border-color: lightgrey;
         padding: 1rem;
     }
 }
