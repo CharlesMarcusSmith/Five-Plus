@@ -11,7 +11,7 @@ export default function LanguageMenu(langauage) {
     return (
         <>
             <div className="lang_heading" onClick={handleClick}>
-                <span ><h3 >Languages</h3><icon>{click ? <FiX/> : <FiAlignJustify/>}</icon></span>
+                <span ><h3 >Languages</h3><i>{click ? <FiX/> : <FiAlignJustify/>}</i></span>
             </div>
             <LanguageItems click={click}/>
         </>

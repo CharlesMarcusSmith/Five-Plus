@@ -1,10 +1,4 @@
-/* Mobiles: */
-/* *{
-    outline: 1px solid red;
-} */
-
-
-icon{
+i{
     font-size: 1.5rem;
     padding-right: 1.2rem;
 }
@@ -48,8 +42,6 @@ li span {
 @media screen and (min-width:1024px) {
     .lang_content{
         background-color: white;
-        border-left: 100px;
-        border-color: lightgrey;
         padding: 1rem;
     }
 }

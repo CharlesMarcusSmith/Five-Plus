@@ -1,3 +1,8 @@
+i{
+    font-size: 1.5rem;
+    padding-right: 1.2rem;
+}
+
 .lang_heading{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -70,7 +75,7 @@ a{
         grid-column: 1 / span 2;
     }
 
-    icon{
+    i{
         display: none;
     }
 
