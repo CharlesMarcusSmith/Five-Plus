@@ -1,20 +1,20 @@
 import "./LanguagesContent.css"
 import { GetLangStarCount } from "../Languages";
-import { Stars } from "./Stars/Stars";
-import { GetStarWording } from "./Stars/Stars"; 
+import { Stars } from "./stars/Stars";
+import { GetStarWording } from "./stars/StarWording"; 
 export default function LanguagesContent() {
     // Function call (rather than component call <component/>)
-    const noOfStars = GetLangStarCount({ target: "HTML" });
+    const noOfStars = GetLangStarCount({ target: "JavaScript" });
     const starWording = GetStarWording({noOfStars: noOfStars});
     return (
         <>
             <div className="lang_content">
                 <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
-                    <h2>HTML</h2>
+                    <h2>JavaScript</h2>
                     <h4 className="stars_wording">{starWording}</h4>
                     <p className="text_heading">Covered</p>
-                    <p>This current project displays my current HTML ability. It has certainly improved but accessibility has been raised as a concern.</p>
+                    <p>This current project displays my current Javascript ability, I have used mostly react here however my knowledge of Java allows me to somewhat get by.</p>
                 </div>
             </div>
         </>

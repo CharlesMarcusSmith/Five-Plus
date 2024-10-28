@@ -1,7 +1,7 @@
 import "./LanguagesContent.css"
 import { GetLangStarCount } from "../Languages";
-import { Stars } from "./Stars/Stars";
-import { GetStarWording } from "./Stars/Stars"; 
+import { Stars } from "./stars/Stars";
+import { GetStarWording } from "./stars/StarWording";
 export default function LanguagesContent() {
     // Function call (rather than component call <component/>)
     const noOfStars = GetLangStarCount({ target: "PostgreSQL" });

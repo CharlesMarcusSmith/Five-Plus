@@ -1,13 +1,13 @@
 import "./LanguagesBody.css"
-import LanguageMenu from "./LanguagesMenu/LanguagesMenu"
-import LangHome from "./LanguagesContent/LangHome"
-import CSS from "./LanguagesContent/CSS"
-import HTML from "./LanguagesContent/HTML"
-import Java from "./LanguagesContent/Java"
-import JavaScript from "./LanguagesContent/JavaScript"
-import Kotlin from "./LanguagesContent/Kotlin"
-import Python from "./LanguagesContent/Python"
-import PostgreSQL from "./LanguagesContent/PostgreSQL"
+import LanguageMenu from "./languages-menu/LanguagesMenu"
+import LangHome from "./languages-content/LangHome"
+import CSS from "./languages-content/CSS"
+import HTML from "./languages-content/HTML"
+import Java from "./languages-content/Java"
+import JavaScript from "./languages-content/JavaScript"
+import Kotlin from "./languages-content/Kotlin"
+import Python from "./languages-content/Python"
+import PostgreSQL from "./languages-content/PostgreSQL"
 export default function LanguagesBody() {
     let Component
     switch (window.location.pathname){

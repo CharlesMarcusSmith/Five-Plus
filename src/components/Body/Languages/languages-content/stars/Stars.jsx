@@ -11,9 +11,3 @@ export function Stars({noOfStars}){
 
     return (<span className="lang_stars"> {stars}</span>)
 }
-
-export function GetStarWording({noOfStars}){
-    // Searching wording using index.
-    const wording = ["Beginner", "Advanced Beginner","Intermediate","Advanced","Expert"]
-    return wording[noOfStars-1]
-}

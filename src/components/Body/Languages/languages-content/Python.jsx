@@ -1,20 +1,20 @@
 import "./LanguagesContent.css"
 import { GetLangStarCount } from "../Languages";
-import { Stars } from "./Stars/Stars";
-import { GetStarWording } from "./Stars/Stars"; 
+import { Stars } from "./stars/Stars";
+import { GetStarWording } from "./stars/StarWording";
 export default function LanguagesContent() {
     // Function call (rather than component call <component/>)
-    const noOfStars = GetLangStarCount({ target: "Java" });
+    const noOfStars = GetLangStarCount({ target: "Python" });
     const starWording = GetStarWording({noOfStars: noOfStars});
     return (
         <>
             <div className="lang_content">
                 <Stars noOfStars={noOfStars}/>
                 <div className="lang_text">
-                    <h2>Java</h2>
+                    <h2>Python</h2>
                     <h4 className="stars_wording">{starWording}</h4>
                     <p className="text_heading">Covered</p>
-                    <p>My native coding Language. Extensive training conducted in Java, and I have a good understanding of OOP.</p>
+                    <p>This is a language I currently code in proffessionally. My understanding is weak, especially with the little tricks Python offers, but I'm still above a novice / beginner level.</p>
                 </div>
             </div>
         </>
